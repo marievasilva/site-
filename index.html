@@ -7,7 +7,121 @@
   <title>Baco Exu do Blues</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-  
+   <style>
+    body {
+      background-color: #0d0d0d;
+      color: #f1f1f1;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px 0;
+      border-bottom: 2px solid #333;
+    }
+
+    .nav-link {
+      color: #f1f1f1 !important;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 0 10px;
+    }
+
+    .nav-link:hover {
+      color: #888 !important;
+    }
+
+    .hero {
+      height: 90vh;
+      background: url("https://upload.wikimedia.org/wikipedia/commons/7/7f/Baco_Exu_do_Blues_2020.png") no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #ccc;
+    }
+
+    .btn-custom {
+      background-color: #f1f1f1;
+      color: #0d0d0d;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #888;
+      color: #fff;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .sobre {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    .galeria img {
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #111;
+      padding: 30px;
+      text-align: center;
+      border-top: 2px solid #333;
+      color: #888;
+    }
+
+    footer i {
+      font-size: 1.8rem;
+      margin: 0 15px;
+      color: #f1f1f1;
+    }
+
+    footer i:hover {
+      color: #888;
+    }
+  </style>
+
 </head>
 
 <body>
