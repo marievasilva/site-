@@ -4,160 +4,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Anavitoria</title>
+  <title>Baco Exu do Blues</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ff6ec4, #7873f5);
-      color: #fff;
+      background-color: #0d0d0d;
+      color: #f1f1f1;
+      font-family: "Montserrat", sans-serif;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.6);
-      border-bottom: 4px solid #ffb703;
+      background-color: #111;
+      padding: 20px 0;
+      border-bottom: 2px solid #333;
     }
 
     .nav-link {
-      color: #ffdd57 !important;
-      font-weight: bold;
+      color: #f1f1f1 !important;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin: 0 10px;
     }
 
     .nav-link:hover {
-      color: #fff176 !important;
+      color: #888 !important;
     }
 
-    .botao-inicio {
-      background: #ff4081;
-      border: none;
+    .hero {
+      height: 90vh;
+      background: url("https://upload.wikimedia.org/wikipedia/commons/7/7f/Baco_Exu_do_Blues_2020.png") no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      color: #ccc;
+    }
+
+    .btn-custom {
+      background-color: #f1f1f1;
+      color: #0d0d0d;
+      font-weight: bold;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-transform: uppercase;
       transition: 0.3s;
     }
 
-    .botao-inicio:hover {
-      background: #ff1744;
+    .btn-custom:hover {
+      background-color: #888;
+      color: #fff;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .sobre {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      padding: 40px;
+    }
+
+    .galeria img {
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
       transform: scale(1.05);
     }
 
-    .secao-anavitoria {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 30px;
-    }
-
-    .fundo-galeria {
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 15px;
-    }
-
     footer {
-      background: rgba(0, 0, 0, 0.7);
-      border-top: 4px solid #ffb703;
+      background-color: #111;
+      padding: 30px;
+      text-align: center;
+      border-top: 2px solid #333;
+      color: #888;
     }
 
     footer i {
       font-size: 1.8rem;
-      margin: 0 10px;
-      color: #ffdd57;
+      margin: 0 15px;
+      color: #f1f1f1;
     }
 
     footer i:hover {
-      color: #fff176;
+      color: #888;
     }
   </style>
 </head>
 
 <body>
-  <header class="p-4">
+  <!-- Navbar -->
+  <header>
     <nav class="container d-flex justify-content-between align-items-center">
-      <h1 class="text-warning fw-bold">ANAVITORIA</h1>
+      <h2 class="fw-bold text-white">Baco Exu do Blues</h2>
       <ul class="nav">
         <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
         <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="container my-5">
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Baco Exu do Blues</h1>
+      <p>Rap, poesia e verdade em forma de música.</p>
+      <a href="#sobre" class="btn btn-custom mt-3">Conhecer</a>
+    </div>
+  </section>
 
-    <!-- Início -->
-    <section id="inicio" class="my-5 text-center">
-      <h2 class="display-4 fw-bold">Bem-vindo ao mundo de Anavitoria</h2>
-      <p class="lead">A dupla que conquistou o Brasil com sua poesia e delicadeza musical 🎶</p>
-      <a href="#anavitoria" class="btn btn-lg botao-inicio fw-bold mt-3">Quero conhecer!</a>
-      <div class="mt-4">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AnaVit%C3%B3ria_Tom_Brasil_%2843208325660%29.jpg"
-          alt="Anavitória em show" class="img-fluid rounded-4 shadow-lg" width="700">
+  <!-- Sobre -->
+  <section id="sobre" class="container">
+    <div class="row sobre align-items-center">
+      <div class="col-md-6">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Baco_Exu_do_Blues_2019.png"
+          class="img-fluid rounded shadow-lg" alt="Baco Exu do Blues em show">
       </div>
-    </section>
-
-    <!-- Sobre -->
-    <section id="anavitoria" class="my-5 secao-anavitoria">
-      <div class="row align-items-center">
-        <div class="col-md-5">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/c/c5/AnaVit%C3%B3ria_Tom_Brasil_%2843181593515%29.jpg"
-            class="img-fluid rounded-pill shadow-lg" alt="Anavitória cantando" width="350">
-        </div>
-        <div class="col-md-7">
-          <h2 class="fw-bold text-warning">Quem é Anavitoria?</h2>
-          <p>Anavitória é uma dupla brasileira formada por <b>Ana Caetano</b> e <b>Vitória Falcão</b>, nascidas em
-            Araguaína (TO). Misturando folk, pop e MPB, elas encantaram o público com letras poéticas e melodias suaves.
-          </p>
-          <p>Com sucessos como <i>Trevo</i>, <i>Fica</i> e <i>Pupila</i>, a dupla ganhou prêmios importantes,
-            incluindo o Grammy Latino. Sua música fala de amor, amizade e sentimentos universais. 🌸</p>
-        </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-3">Quem é Baco?</h2>
+        <p>Baco Exu do Blues é um rapper, cantor e compositor brasileiro. Nascido em Salvador, Bahia, ele ganhou destaque
+          nacional com o sucesso <b>"Te Amo Disgraça"</b> e consolidou sua carreira com o álbum <b>"Esú"</b>.</p>
+        <p>Suas músicas exploram temas como amor, negritude, identidade e questões sociais, misturando rap, MPB, R&B e
+          poesia em uma estética única.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Galeria -->
-    <section id="galeria" class="my-5 text-center">
-      <h2 class="fw-bold text-warning mb-4">Galeria</h2>
-      <div class="container p-3 fundo-galeria">
-        <div class="row g-4">
-          <div class="col-md-6">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/AnaVit%C3%B3ria_Tom_Brasil_%2843208324270%29.jpg"
-              class="img-fluid rounded-5 shadow-lg" alt="Show da dupla">
-          </div>
-          <div class="col-md-6">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/AnaVit%C3%B3ria_Tom_Brasil_%2843181593125%29.jpg"
-              class="img-fluid rounded-5 shadow-lg" alt="Apresentação ao vivo">
-          </div>
-        </div>
+  <!-- Galeria -->
+  <section id="galeria" class="container text-center">
+    <h2 class="fw-bold mb-5">Galeria</h2>
+    <div class="row galeria g-4">
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Baco_Exu_do_Blues_2020.png"
+          class="img-fluid shadow-lg" alt="Baco Exu do Blues 2020">
       </div>
-    </section>
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Baco_Exu_do_Blues.jpg"
+          class="img-fluid shadow-lg" alt="Baco Exu do Blues em apresentação">
+      </div>
+      <div class="col-md-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Baco_Exu_do_Blues_2019.png"
+          class="img-fluid shadow-lg" alt="Baco em show">
+      </div>
+    </div>
+  </section>
 
-    <!-- Contato -->
-    <section id="contato" class="my-5 text-center">
-      <h2 class="fw-bold text-warning">Entre em contato</h2>
-      <form class="mt-4 p-4 bg-light text-dark rounded-4 shadow-lg">
-        <div class="mb-3">
-          <label for="nome" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Digite seu email">
-        </div>
-        <div class="mb-3">
-          <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
-        </div>
-        <button type="submit" class="btn btn-lg btn-warning fw-bold">Enviar mensagem</button>
-      </form>
-    </section>
-  </main>
+  <!-- Contato -->
+  <section id="contato" class="container text-center">
+    <h2 class="fw-bold mb-4">Contato</h2>
+    <form class="p-4 bg-dark rounded-4 shadow-lg">
+      <div class="mb-3">
+        <input type="text" class="form-control" placeholder="Seu nome">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="Seu email">
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" rows="4" placeholder="Sua mensagem"></textarea>
+      </div>
+      <button class="btn btn-custom">Enviar</button>
+    </form>
+  </section>
 
   <!-- Rodapé -->
-  <footer class="text-center p-4">
-    <p class="mb-1">Siga Anavitória:</p>
+  <footer>
+    <p>Siga Baco:</p>
     <i class="bi bi-instagram"></i>
     <i class="bi bi-youtube"></i>
     <i class="bi bi-spotify"></i>
     <p class="mt-3 small">Projeto fictício sem fins comerciais.</p>
   </footer>
-
 </body>
 
 </html>
